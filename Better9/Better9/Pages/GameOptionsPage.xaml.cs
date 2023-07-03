@@ -1,6 +1,8 @@
 using System.Reflection.Metadata;
+using Services.Functions;
 
 namespace Better9.Pages;
+
 public partial class GameOptionsPage : ContentPage
 {
 
@@ -18,6 +20,7 @@ public partial class GameOptionsPage : ContentPage
 
     private async void OnBetter9Clicked(object sender, EventArgs e)
     {
+        Shuffler shuffler = new Shuffler();
         await Shell.Current.GoToAsync("Better9Page");
     }
 

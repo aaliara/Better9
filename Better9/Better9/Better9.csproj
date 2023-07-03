@@ -57,10 +57,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Services\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Pages\Better9Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -96,5 +92,8 @@
 	  <BundleResource Include="Resources\Images\settingsicon.jpg" />
 	  <BundleResource Include="Resources\Images\profileicon.jpg" />
 	  <BundleResource Include="Resources\Images\b9.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Services\Services.csproj" />
 	</ItemGroup>
 </Project>
