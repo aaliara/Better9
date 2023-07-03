@@ -25,7 +25,13 @@ public static class MauiProgram
 				fonts.AddFont("RDD.ttf", "RDD");
 				fonts.AddFont("TW.ttf", "TW");
 				fonts.AddFont("UnTH.ttf", "UnTh");
-			});
+				fonts.AddFont("HelveticaLight.ttf", "HelveticaLight");
+				fonts.AddFont("HelveticaBold.ttf", "HelveticaBold");
+                fonts.AddFont("Helvetica.ttf", "Helvetica");
+                fonts.AddFont("RobotoBold.ttf", "RobotoBold");
+                fonts.AddFont("RobotoRegular.ttf", "RobotoRegular");
+                fonts.AddFont("RobotoBoldItalic.ttf", "RobotoBoldItalic");
+            });
 
 #if DEBUG
 		builder.Logging.AddDebug();

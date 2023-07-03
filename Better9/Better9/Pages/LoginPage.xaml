@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Better9.Pages.LoginPage"
@@ -9,33 +9,35 @@
                HorizontalOptions="FillAndExpand"
                 Aspect="AspectFill"/>
             <Label Margin="20"
-                Text="Log in"
-                FontFamily="BT"
+                Text="LOG IN"
+                TextColor="White"
+                FontFamily="HelveticaBold"
                 VerticalOptions="Start" 
                 HorizontalOptions="Start"
-                FontSize="28">
+                FontSize="22">
                 <Label.Shadow>
                     <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
-                            Opacity="0.8" />
+                            Brush="white"
+                            Offset="5,5"
+                            Opacity="0.6" />
                 </Label.Shadow>
             </Label>
-            <StackLayout Margin="150"
+            <StackLayout Margin="100"
                          BackgroundColor="Black"
                          Opacity="0.8">
                 <Label x:Name="lblEmail"
                     Text="Email"
+                    TextColor="White"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     FontSize="25"
                     WidthRequest="350"
-                    FontFamily="BT">
+                    FontFamily="Helvetica">
                     <Label.Shadow>
                         <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
-                            Opacity="0.8" />
+                            Brush="white"
+                            Offset="5,5"
+                            Opacity="0.6" />
                     </Label.Shadow>
                 </Label>
                 <Entry
@@ -49,11 +51,12 @@
                 <Label
                     x:Name="lblPass1"
                     Text="Password"
+                    TextColor="White"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     FontSize="25"
                     WidthRequest="350"
-                    FontFamily="BT">
+                    FontFamily="Helvetica">
                     <Label.Shadow>
                         <Shadow
                             Brush="blue"
@@ -70,17 +73,18 @@
                     Placeholder="********"
                     IsPassword="True"/>
                 <Button
+                    Margin="20"
                     x:Name="btnSignup"
-                    Text="Log in"
-                    TextColor="Blue"
+                    Text="Log In"
+                    TextColor="White"
                     Clicked="OnLoginClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    FontSize="25"
-                    WidthRequest="150"
-                    BorderColor="DarkBlue"
-                    BorderWidth="2"
-                    FontFamily="BT"/>
+                    FontSize="24"
+                    WidthRequest="200"
+                    BorderColor="DarkGrey"
+                    BorderWidth="3"
+                    FontFamily="RobotoBold"/>
             </StackLayout>
         </Grid>
     </VerticalStackLayout>

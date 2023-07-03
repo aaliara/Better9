@@ -30,6 +30,9 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -72,4 +75,26 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\HelveticaLight.ttf" />
+	  <None Remove="Resources\Fonts\HelveticaBold.ttf" />
+	  <None Remove="Resources\Fonts\Helvetica.ttf" />
+	  <None Remove="Resources\Fonts\RobotoBold.ttf" />
+	  <None Remove="Resources\Fonts\RobotoRegular.ttf" />
+	  <None Remove="Resources\Fonts\RobotoBoldItalic.ttf" />
+	  <None Remove="Resources\Images\settingsicon.jpg" />
+	  <None Remove="Resources\Images\profileicon.jpg" />
+	  <None Remove="Resources\Images\b9.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Fonts\HelveticaLight.ttf" />
+	  <BundleResource Include="Resources\Fonts\HelveticaBold.ttf" />
+	  <BundleResource Include="Resources\Fonts\Helvetica.ttf" />
+	  <BundleResource Include="Resources\Fonts\RobotoBold.ttf" />
+	  <BundleResource Include="Resources\Fonts\RobotoRegular.ttf" />
+	  <BundleResource Include="Resources\Fonts\RobotoBoldItalic.ttf" />
+	  <BundleResource Include="Resources\Images\settingsicon.jpg" />
+	  <BundleResource Include="Resources\Images\profileicon.jpg" />
+	  <BundleResource Include="Resources\Images\b9.png" />
+	</ItemGroup>
 </Project>

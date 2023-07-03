@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Better9.Pages.GameOptionsPage"
@@ -13,14 +13,15 @@
             <Grid>
                 <Label Margin="20"
                     Text="Game Options"
-                    FontFamily="BT"
+                    TextColor="White"
+                    FontFamily="RobotoRegular"
                     VerticalOptions="Start" 
                     HorizontalOptions="Start"
-                    FontSize="28">
+                    FontSize="22">
                     <Label.Shadow>
                         <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
+                            Brush="white"
+                            Offset="5,5"
                             Opacity="0.8" />
                     </Label.Shadow>
                 </Label>
@@ -30,32 +31,34 @@
                     <Label
                         x:Name="lblName"
                         Margin="5"
-                        FontSize="24"
-                        FontFamily="BT"
+                        FontSize="22"
+                        FontFamily="RobotoRegular"
                         Text="Rohan"
+                        TextColor="White"
                         VerticalOptions="Center"
                         HorizontalOptions="Start"
                         >
                         <Label.Shadow>
                             <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
+                            Brush="white"
+                            Offset="5,5"
                             Opacity="0.8" />
                         </Label.Shadow>
                     </Label>
                     <Label
                         x:Name="lblCredit"
                         Margin="5"
-                        FontSize="24"
-                        FontFamily="BT"
+                        FontSize="22"
+                        FontFamily="RobotoRegular"
                         VerticalOptions="Center"
                         HorizontalOptions="End"
                         Text="1500 €"
+                        TextColor="White"
                         >
                         <Label.Shadow>
                             <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
+                            Brush="white"
+                            Offset="5,5"
                             Opacity="0.8" />
                         </Label.Shadow>
                     </Label>
@@ -66,8 +69,8 @@
                     HorizontalOptions="End"
                     Margin="15">
                     <ImageButton
-                        Source="friends"
-                        BackgroundColor="White"
+                        Source="profileicon"
+                        BackgroundColor="Black"
                         x:Name="btnFriends"
                         HeightRequest="30"
                         WidthRequest="30"
@@ -76,7 +79,8 @@
                         Clicked="OnFriendsClicked"
                         />
                     <ImageButton
-                        Source="settings"
+                        Source="settingsicon"
+                        BackgroundColor="black"
                         x:Name="btnSettings"
                         HeightRequest="30"
                         WidthRequest="30"
@@ -116,18 +120,20 @@
                     Spacing="30"
                     HeightRequest="250">
                     <Border BackgroundColor="Black"
-                            Stroke="Blue">
+                            Stroke="white">
                         <VerticalStackLayout Margin="10">
                             <Label
                                 Text="Better9"
+                                TextColor="White"
                                 HorizontalOptions="Center"
                                 FontSize="20"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                Margin="10"
+                                HeightRequest="150"
                                 Clicked="OnBetter9Clicked"
                                 WidthRequest="150"
-                                Source="better_9"
+                                Source="b9"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
                     </Border>

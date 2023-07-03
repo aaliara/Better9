@@ -2,52 +2,53 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Better9.MainPage">
-
+    
     <StackLayout
             VerticalOptions="Center">
         <Grid>
             <Image Source="background.jpg"
                HorizontalOptions="FillAndExpand"
                 Aspect="AspectFill"/>
-            <Label Margin="20"
-                Text="Better9"
-                FontFamily="BT"
+            <Label Margin="60"
+                Text="BETTER9"
+                TextColor="Snow"
+                FontFamily="RobotoBoldItalic"
                 VerticalOptions="Start" 
-                HorizontalOptions="Start"
-                FontSize="28">
+                HorizontalOptions="Center"
+                FontSize="60">
                 <Label.Shadow>
                     <Shadow
-                            Brush="Blue"
-                            Offset="10,10"
-                            Opacity="0.8" />
+                            Brush="white"
+                            Offset="30,50"
+                            Opacity="5" />
                 </Label.Shadow>
             </Label>
-            <StackLayout Margin="100">
+            <StackLayout Margin="160">
                 <Button
                     x:Name="btnLogin"
-                    Text="Log in"
-                    TextColor="Blue"
+                    Text="LOG IN"
+                    TextColor="WhiteSmoke"
                     Clicked="OnLoginClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    FontSize="35"
-                    WidthRequest="250"
-                    BorderColor="DarkBlue"
-                    BorderWidth="2"
-                    FontFamily="BT"/>
-                <StackLayout Margin="50"></StackLayout>
+                    FontSize="24"
+                    WidthRequest="200"
+                    BorderColor="DarkGray"
+                    BorderWidth="3"
+                    FontFamily="RobotoBold"/>
+                <StackLayout Margin="5"></StackLayout>
                 <Button
                     x:Name="btnSignUp"
-                    Text="Sign up"
-                    TextColor="Blue"
+                    Text="SIGN UP"
+                    TextColor="WhiteSmoke"
                     Clicked="OnSignupClicked"
                     HorizontalOptions="Center" 
                     VerticalOptions="Center"
-                    FontFamily= "BT"
-                    WidthRequest="250"
-                    BorderColor="DarkBlue"
-                    BorderWidth="2"
-                    FontSize="35"/>
+                    FontFamily= "RobotoBold"
+                    WidthRequest="200"
+                    BorderColor="DarkGrey"
+                    BorderWidth="3"
+                    FontSize="24"/>
             </StackLayout>
         </Grid>
     </StackLayout>

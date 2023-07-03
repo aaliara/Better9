@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Better9.Pages.LoadingPage"
+             Title="LoadingPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Lägg till din logo här, antingen som en bild eller någon annan visuell representation -->
+        <!-- Exempel: -->
+        <Image x:Name="logoImage" Source="b9.png" WidthRequest="200" HeightRequest="200" />
+        
+        <!-- Om du vill kan du också lägga till en liten text som visar att appen laddas -->
+        <Label Text="Loading..." FontSize="18" HorizontalOptions="Center" Margin="10" />
+        <ActivityIndicator IsRunning="True" />
+    </StackLayout>
+</ContentPage>
+

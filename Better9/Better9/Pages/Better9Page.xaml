@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Better9.Pages.Better9Page"
@@ -14,13 +14,14 @@
         <VerticalStackLayout Spacing="10">
             <Grid>
                 <ImageButton x:Name="btnBack"
-                    Source="friends"
-                    BackgroundColor="White"
+                    Source="profileicon"
+                    BackgroundColor="Black"
                     WidthRequest="20"
                     HeightRequest="20"
                     HorizontalOptions="Start"
                     Margin="20, 20, 0, 0"/>
-                <ImageButton Source="settings"
+                <ImageButton Source="settingsicon"
+                    BackgroundColor="Black"
                     WidthRequest="20"
                     x:Name="btnSettings"
                     HeightRequest="20"
@@ -29,16 +30,24 @@
             </Grid>
             <Grid>
                 <HorizontalStackLayout>
-                    <Border Stroke="Blue" Margin="100, 0, 0, 0"
+                    <Frame BorderColor="Blue" CornerRadius="25" Margin="100, 0, 0, 0" WidthRequest="200" 
                             BackgroundColor="Pink">
-                        <HorizontalStackLayout Margin="10" Spacing="10"
-                                               >
+                        <HorizontalStackLayout Margin="0" Spacing="0">
+                            <Grid HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="50" HeightRequest="50" Margin="0, 0, 0, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                             <Image x:Name="player1"
                                 Source="friends"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
                                 WidthRequest="50"
-                                BackgroundColor="White"/>
+                                HeightRequest="50"
+                                BackgroundColor="White">
+                                 <Image.Clip>
+                                        <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                                    </Image.Clip>
+                                    </Image>
+                    </Frame>
+                       </Grid>
                             <VerticalStackLayout HorizontalOptions="End">
                                 <Label
                                     Text="Mustafa"
@@ -56,6 +65,7 @@
                                            HeightRequest="10"
                                            BackgroundColor="White"
                                            HorizontalOptions="End"/>
+                                   
                                     <Label
                                         Text="€10"
                                         HorizontalOptions="End"
@@ -65,60 +75,125 @@
                             </VerticalStackLayout>
                             
                         </HorizontalStackLayout>
-                    </Border>
+                    </Frame>
                 </HorizontalStackLayout>
+                <Grid HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="50" HeightRequest="50" Margin="100, 0, 100, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player2"
                     Source="friends"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="50"
-                    BackgroundColor="White"/>
+                    HeightRequest="50"
+                    BackgroundColor="White">
+                    <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                    </Frame>
+                       </Grid>
+                <Grid HorizontalOptions="End" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="0, 0, 120, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player3"
                     Source="friends"
                     HorizontalOptions="End"
                     VerticalOptions="Center"
                     WidthRequest="50"
-                    Margin="0, 0, 150, 0"
-                    BackgroundColor="White"/>
+                    HeightRequest="50"
+                    Margin="0, 0, -20, 0"
+                    BackgroundColor="White">
+                     <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                    </Frame>
+                </Grid>
+
             </Grid>
             <Grid>
+                <Grid HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="100, 50, 0, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player4" 
                     Source="friends"
                     HorizontalOptions="Start"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Margin="100, 60, 0, 0"
-                    WidthRequest="50"/>
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Margin="-20, 0, 0, 0">
+                     <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                </Frame>
+                </Grid>
+                <Grid HorizontalOptions="End" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="0, 50, 100, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player5"
                     Source="friends"
                     HorizontalOptions="End"
                     VerticalOptions="Center"
                     WidthRequest="50"
-                    Margin="0, 60, 100, 0"
-                    BackgroundColor="White"/>
-            </Grid>
+                    HeightRequest="50"
+                    BackgroundColor="White"
+                    Margin="0, 0, -20, 0">
+                     <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                </Frame>
+                </Grid>
+                </Grid>
+             
             <Grid>
+                <Grid HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="180, 50, 0, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player6" 
                     Source="friends"
                     HorizontalOptions="Start"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Margin="150, 60, 0, 0"
-                    WidthRequest="50"/>
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Margin="-20, 0, 0, 0">
+                     <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                    </Frame>
+                    </Grid>
+                <Grid HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="100, 60, 100, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="mainPlayer"
                     Source="friends"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Margin="0, 60, 0, 0"
+                    Margin="0, 0, 0, 0"
                     WidthRequest="50"
-                    BackgroundColor="White"/>
+                    HeightRequest="50"
+                    BackgroundColor="White">
+                     <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                    </Frame>
+                    </Grid>
+                <Grid HorizontalOptions="End" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" Margin="0, 50, 180, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
                 <Image x:Name="player8"
                     Source="friends"
                     HorizontalOptions="End"
                     VerticalOptions="Center"
                     WidthRequest="50"
-                    Margin="0, 60, 150, 0"
-                    BackgroundColor="White"/>
+                    HeightRequest="50"
+                    Margin="0, 0, -20, 0"
+                    BackgroundColor="White">
+                    <Image.Clip>
+                    <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                        </Image.Clip>
+                </Image>
+                    </Frame>
+                    </Grid>
             </Grid>
         </VerticalStackLayout>
     </Grid>

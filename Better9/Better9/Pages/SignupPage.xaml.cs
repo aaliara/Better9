@@ -1,6 +1,4 @@
-
 using Microsoft.Data.SqlClient;
-
 namespace Better9.Pages;
 
 public partial class SignupPage : ContentPage
@@ -30,7 +28,6 @@ public partial class SignupPage : ContentPage
         await Shell.Current.GoToAsync("LoginPage");
 	}
 
-    // new code 
     //protected override void OnAppearing()
     //{
     //    base.OnAppearing();
