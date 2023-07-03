@@ -30,6 +30,7 @@ public partial class SignupPage : ContentPage
         await Shell.Current.GoToAsync("LoginPage");
 	}
 
+    // new code 
     //protected override void OnAppearing()
     //{
     //    base.OnAppearing();
