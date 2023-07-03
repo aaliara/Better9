@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Better9.Pages.GameOptionsPage"
+             Title="GameOptionsPage"
+             >
+    <Grid>
+        <Image Source="background.jpg"
+               HorizontalOptions="FillAndExpand"
+                Aspect="AspectFill"/>
+        <VerticalStackLayout
+            Spacing="50">
+            <Grid>
+                <Label Margin="20"
+                    Text="Game Options"
+                    FontFamily="BT"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start"
+                    FontSize="28">
+                    <Label.Shadow>
+                        <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                    </Label.Shadow>
+                </Label>
+                <HorizontalStackLayout VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Spacing="10">
+                    <Label
+                        x:Name="lblName"
+                        Margin="5"
+                        FontSize="24"
+                        FontFamily="BT"
+                        Text="Rohan"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        >
+                        <Label.Shadow>
+                            <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                        </Label.Shadow>
+                    </Label>
+                    <Label
+                        x:Name="lblCredit"
+                        Margin="5"
+                        FontSize="24"
+                        FontFamily="BT"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Text="1500 €"
+                        >
+                        <Label.Shadow>
+                            <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                        </Label.Shadow>
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="10"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    Margin="15">
+                    <ImageButton
+                        Source="friends"
+                        BackgroundColor="White"
+                        x:Name="btnFriends"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Clicked="OnFriendsClicked"
+                        />
+                    <ImageButton
+                        Source="settings"
+                        x:Name="btnSettings"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Clicked="OnSettingsClicked"
+                        />
+                </HorizontalStackLayout>
+
+
+                <!--<HorizontalStackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    HeightRequest="200"
+                    WidthRequest="100"
+                    Spacing="10">
+                    <ImageButton
+                        Source="friends"
+                        x:Name="btnFriends"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        Clicked="OnFriendsClicked"
+                        />
+                    <ImageButton
+                        Source="settings"
+                        x:Name="btnSettings"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Clicked="OnSettingsClicked"
+                        />
+                </HorizontalStackLayout>-->
+            </Grid>
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout  
+                    Margin="10"
+                    VerticalOptions="End"
+                    Spacing="30"
+                    HeightRequest="250">
+                    <Border BackgroundColor="Black"
+                            Stroke="Blue">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="Better9"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnBetter9Clicked"
+                                WidthRequest="150"
+                                Source="better_9"
+                                Aspect="AspectFill"/>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border BackgroundColor="Black"
+                            Stroke="Purple">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="Rang"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnHokmClicked"
+                                WidthRequest="150"
+                                Source="hokm"
+                                Aspect="AspectFill"/>   
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border BackgroundColor="Black"
+                            Stroke="Green">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="Sib"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnSibClicked"
+                                WidthRequest="150"
+                                Source="sib"
+                                Aspect="AspectFill"/>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border BackgroundColor="Black"
+                            Stroke="Red">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="Fortune"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnFortuneTellerClicked"
+                                WidthRequest="150"
+                                Source="fortune_teller"
+                                Aspect="AspectFill"/>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border BackgroundColor="Black"
+                            Stroke="Orange">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="SkitGubbe"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnSkitGubbeClicked"
+                                WidthRequest="150"
+                                Source="better_9"
+                                Aspect="AspectFill"/>
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border BackgroundColor="Black"
+                            Stroke="Gray">
+                        <VerticalStackLayout Margin="10">
+                            <Label
+                                Text="Spoon"
+                                HorizontalOptions="Center"
+                                FontSize="20"
+                                FontFamily="RDD"/>
+                            <ImageButton
+                                HeightRequest="180"
+                                Clicked="OnSkitGubbeClicked"
+                                WidthRequest="150"
+                                Source="better_9"
+                                Aspect="AspectFill"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </HorizontalStackLayout>
+            </ScrollView>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

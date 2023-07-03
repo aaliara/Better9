@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Better9.MainPage">
+
+    <StackLayout
+            VerticalOptions="Center">
+        <Grid>
+            <Image Source="background.jpg"
+               HorizontalOptions="FillAndExpand"
+                Aspect="AspectFill"/>
+            <Label Margin="20"
+                Text="Better9"
+                FontFamily="BT"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontSize="28">
+                <Label.Shadow>
+                    <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                </Label.Shadow>
+            </Label>
+            <StackLayout Margin="100">
+                <Button
+                    x:Name="btnLogin"
+                    Text="Log in"
+                    TextColor="Blue"
+                    Clicked="OnLoginClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="35"
+                    WidthRequest="250"
+                    BorderColor="DarkBlue"
+                    BorderWidth="2"
+                    FontFamily="BT"/>
+                <StackLayout Margin="50"></StackLayout>
+                <Button
+                    x:Name="btnSignUp"
+                    Text="Sign up"
+                    TextColor="Blue"
+                    Clicked="OnSignupClicked"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    FontFamily= "BT"
+                    WidthRequest="250"
+                    BorderColor="DarkBlue"
+                    BorderWidth="2"
+                    FontSize="35"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

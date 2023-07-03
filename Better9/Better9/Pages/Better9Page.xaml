@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Better9.Pages.Better9Page"
+             Title="Better9Page">
+    <Grid>
+        <Image Source="background.jpg"
+               HorizontalOptions="FillAndExpand"
+                   Aspect="AspectFill"/>
+        <Image Source="table.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="600"/>
+        <VerticalStackLayout Spacing="10">
+            <Grid>
+                <ImageButton x:Name="btnBack"
+                    Source="friends"
+                    BackgroundColor="White"
+                    WidthRequest="20"
+                    HeightRequest="20"
+                    HorizontalOptions="Start"
+                    Margin="20, 20, 0, 0"/>
+                <ImageButton Source="settings"
+                    WidthRequest="20"
+                    x:Name="btnSettings"
+                    HeightRequest="20"
+                    HorizontalOptions="End"
+                    Margin="0, 20, 20, 0"/>
+            </Grid>
+            <Grid>
+                <HorizontalStackLayout>
+                    <Border Stroke="Blue" Margin="100, 0, 0, 0"
+                            BackgroundColor="Pink">
+                        <HorizontalStackLayout Margin="10" Spacing="10"
+                                               >
+                            <Image x:Name="player1"
+                                Source="friends"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="50"
+                                BackgroundColor="White"/>
+                            <VerticalStackLayout HorizontalOptions="End">
+                                <Label
+                                    Text="Mustafa"
+                                    HorizontalOptions="End"
+                                    FontSize="20"
+                                    FontFamily="OpenSansRB"/>
+                                <Label
+                                    Text="€1.2 K"
+                                    HorizontalOptions="Center"
+                                    FontSize="15"
+                                    FontFamily="OpenSansRB"/>
+                                <HorizontalStackLayout Spacing="5" HorizontalOptions="End">
+                                    <Image Source="friends"
+                                           WidthRequest="10"
+                                           HeightRequest="10"
+                                           BackgroundColor="White"
+                                           HorizontalOptions="End"/>
+                                    <Label
+                                        Text="€10"
+                                        HorizontalOptions="End"
+                                        FontSize="15"
+                                        FontFamily="OpenSansRB"/>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                            
+                        </HorizontalStackLayout>
+                    </Border>
+                </HorizontalStackLayout>
+                <Image x:Name="player2"
+                    Source="friends"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="50"
+                    BackgroundColor="White"/>
+                <Image x:Name="player3"
+                    Source="friends"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    WidthRequest="50"
+                    Margin="0, 0, 150, 0"
+                    BackgroundColor="White"/>
+            </Grid>
+            <Grid>
+                <Image x:Name="player4" 
+                    Source="friends"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Margin="100, 60, 0, 0"
+                    WidthRequest="50"/>
+                <Image x:Name="player5"
+                    Source="friends"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    WidthRequest="50"
+                    Margin="0, 60, 100, 0"
+                    BackgroundColor="White"/>
+            </Grid>
+            <Grid>
+                <Image x:Name="player6" 
+                    Source="friends"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Margin="150, 60, 0, 0"
+                    WidthRequest="50"/>
+                <Image x:Name="mainPlayer"
+                    Source="friends"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0, 60, 0, 0"
+                    WidthRequest="50"
+                    BackgroundColor="White"/>
+                <Image x:Name="player8"
+                    Source="friends"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    WidthRequest="50"
+                    Margin="0, 60, 150, 0"
+                    BackgroundColor="White"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

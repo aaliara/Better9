@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Better9.Pages.SignupPage"
+             Title="SignupPage">
+
+    <VerticalStackLayout>
+        <Grid>
+            <Image Source="background.jpg"
+               HorizontalOptions="FillAndExpand"
+                Aspect="AspectFill"/>
+            <Label Margin="20"
+                Text="Sign up"
+                FontFamily="BT"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                FontSize="28">
+                <Label.Shadow>
+                    <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                </Label.Shadow>
+            </Label>
+            <StackLayout Margin="100"
+                         BackgroundColor="Black"
+                         Opacity="0.8">
+                <Label x:Name="lblEmail"
+                    Text="Email"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontFamily="BT">
+                    <Label.Shadow>
+                        <Shadow
+                            Brush="Blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                    </Label.Shadow>
+                </Label>
+                <Entry
+                    x:Name="inputEmail"
+                    WidthRequest="350"
+                    BackgroundColor="white"
+                    FontSize="20"
+                    TextColor="Black"
+                    ClearButtonVisibility="WhileEditing"
+                    Placeholder="sve.svensson@gmail.com"/>
+                <Label
+                    x:Name="lblPass1"
+                    Text="Password"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontFamily="BT">
+                    <Label.Shadow>
+                        <Shadow
+                            Brush="blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                    </Label.Shadow>
+                </Label>
+                <Entry
+                    x:Name="inputPass1"
+                    WidthRequest="350"
+                    BackgroundColor="White"
+                    FontSize="20"
+                    TextColor="Black"
+                    Placeholder="********"
+                    IsPassword="True"/>
+                <Label
+                    x:Name="lblPass2"
+                    Text="Repeat Password"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontFamily="BT">
+                    <Label.Shadow>
+                        <Shadow
+                            Brush="blue"
+                            Offset="10,10"
+                            Opacity="0.8" />
+                    </Label.Shadow>
+                </Label>
+                <Entry
+                    x:Name="inputPass2"
+                    WidthRequest="350"
+                    BackgroundColor="White"
+                    FontSize="20"
+                    TextColor="Black"
+                    Placeholder="********"
+                    IsPassword="True"/>
+                <Button
+                    x:Name="btnSignup"
+                    Text="Sign up"
+                    TextColor="Blue"
+                    Clicked="OnSignupClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="25"
+                    WidthRequest="150"
+                    BorderColor="DarkBlue"
+                    BorderWidth="2"
+                    FontFamily="BT"/>
+            </StackLayout>
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

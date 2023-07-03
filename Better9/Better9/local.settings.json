@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "LocalDbConnString": "Data Source = (localDb)\\LocalDB;Initial Catalog = UserAccounts;Integrated Security = true"
+  }
+}
