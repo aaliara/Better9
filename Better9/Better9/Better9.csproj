@@ -81,6 +81,7 @@
 	  <None Remove="Resources\Images\settingsicon.jpg" />
 	  <None Remove="Resources\Images\profileicon.jpg" />
 	  <None Remove="Resources\Images\b9.png" />
+	  <None Remove="Resources\Images\loadingpage.jpg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\HelveticaLight.ttf" />
@@ -92,8 +93,12 @@
 	  <BundleResource Include="Resources\Images\settingsicon.jpg" />
 	  <BundleResource Include="Resources\Images\profileicon.jpg" />
 	  <BundleResource Include="Resources\Images\b9.png" />
+	  <BundleResource Include="Resources\Images\loadingpage.jpg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Services\Services.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+	  <PackageReference Include="Com.Airbnb.Android.Lottie" Version="4.2.2" />
 	</ItemGroup>
 </Project>
