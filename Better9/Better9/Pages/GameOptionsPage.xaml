@@ -2,29 +2,32 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Better9.Pages.GameOptionsPage"
-             Title="GameOptionsPage"
-             >
+             Title="GameOptionsPage">
     <Grid>
-        <Image Source="background.jpg"
+        <Image Source="backgroundlobby.jpg"
                HorizontalOptions="FillAndExpand"
                 Aspect="AspectFill"/>
         <VerticalStackLayout
             Spacing="50">
             <Grid>
-                <Label Margin="20"
-                    Text="Game Options"
-                    TextColor="White"
-                    FontFamily="RobotoRegular"
-                    VerticalOptions="Start" 
-                    HorizontalOptions="Start"
-                    FontSize="22">
-                    <Label.Shadow>
-                        <Shadow
-                            Brush="white"
-                            Offset="5,5"
-                            Opacity="0.8" />
-                    </Label.Shadow>
-                </Label>
+                <HorizontalStackLayout Margin="10" Spacing="10">
+                            <Grid HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="40" HeightRequest="40" Margin="0, 0, 0, 0">
+                <Frame BorderColor="White" BackgroundColor="White" CornerRadius="25">
+                            <Image x:Name="player1"
+                                Source="friends"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="40"
+                                HeightRequest="40"
+                                BackgroundColor="White">
+                                 <Image.Clip>
+                                        <EllipseGeometry Center=" 25,25" RadiusX="25" RadiusY="25"/>
+                                 </Image.Clip>
+                            </Image>
+                </Frame>
+                            </Grid>
+                </HorizontalStackLayout>
+                
                 <HorizontalStackLayout VerticalOptions="Center"
                                        HorizontalOptions="Center"
                                        Spacing="10">
@@ -114,109 +117,119 @@
                 </HorizontalStackLayout>-->
             </Grid>
             <ScrollView Orientation="Horizontal">
+                
                 <HorizontalStackLayout  
-                    Margin="10"
+                    Margin="20, 0, 20, 0"
                     VerticalOptions="End"
-                    Spacing="30"
-                    HeightRequest="250">
-                    <Border BackgroundColor="Black"
-                            Stroke="white">
-                        <VerticalStackLayout Margin="10">
+                    Spacing="10"
+                    HeightRequest="200">
+                    <Frame Background="black" BorderColor="Gold"  CornerRadius="5">
+                       
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="Better9"
                                 TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                Margin="10"
+                                Margin="0"
                                 HeightRequest="150"
                                 Clicked="OnBetter9Clicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="b9"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
-                    </Border>
-                    <Border BackgroundColor="Black"
-                            Stroke="Purple">
-                        <VerticalStackLayout Margin="10">
+                            
+                    </Frame>
+                    
+                        <Frame Background="black" BorderColor="Silver"  CornerRadius="5">
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="Rang"
+                                TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                Margin="0"
+                                HeightRequest="150"
                                 Clicked="OnHokmClicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="hokm"
                                 Aspect="AspectFill"/>   
                         </VerticalStackLayout>
-                    </Border>
-                    <Border BackgroundColor="Black"
-                            Stroke="Green">
-                        <VerticalStackLayout Margin="10">
+                            </Frame>
+
+                        <Frame Background="black" BorderColor="SeaShell"  CornerRadius="5">
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="Sib"
+                                TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                Margin="0"
+                                HeightRequest="150"
                                 Clicked="OnSibClicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="sib"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
-                    </Border>
-                    <Border BackgroundColor="Black"
-                            Stroke="Red">
-                        <VerticalStackLayout Margin="10">
+                        </Frame>
+           
+                        <Frame Background="black" BorderColor="Blue"  CornerRadius="8">
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="Fortune"
+                                TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                HeightRequest="150"
                                 Clicked="OnFortuneTellerClicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="fortune_teller"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
-                    </Border>
-                    <Border BackgroundColor="Black"
-                            Stroke="Orange">
-                        <VerticalStackLayout Margin="10">
+                            </Frame>
+                   
+                        <Frame Background="black" BorderColor="Red"  CornerRadius="5">
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="SkitGubbe"
+                                TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                HeightRequest="150"
                                 Clicked="OnSkitGubbeClicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="better_9"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
-                    </Border>
-                    <Border BackgroundColor="Black"
-                            Stroke="Gray">
-                        <VerticalStackLayout Margin="10">
+                            </Frame>
+                   
+                        <Frame Background="black" BorderColor="Pink" CornerRadius="5">
+                        <VerticalStackLayout Margin="1">
                             <Label
                                 Text="Spoon"
+                                TextColor="White"
                                 HorizontalOptions="Center"
-                                FontSize="20"
+                                FontSize="12"
                                 FontFamily="RDD"/>
                             <ImageButton
-                                HeightRequest="180"
+                                HeightRequest="150"
                                 Clicked="OnSkitGubbeClicked"
-                                WidthRequest="150"
+                                WidthRequest="120"
                                 Source="better_9"
                                 Aspect="AspectFill"/>
                         </VerticalStackLayout>
-                    </Border>
+                            </Frame>
+                  
                 </HorizontalStackLayout>
             </ScrollView>
         </VerticalStackLayout>

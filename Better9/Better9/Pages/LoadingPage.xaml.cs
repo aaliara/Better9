@@ -17,11 +17,8 @@ public partial class LoadingPage : ContentPage
         {
             base.OnAppearing();
 
-            // Simulera en kort fördröjning för att visa LoadingPage (ta bort detta i din riktiga kod)
-            await System.Threading.Tasks.Task.Delay(3000); // Fördröj i 3 sekunder
-
-        // Start the rotation animation
-        await logoImage.RotateTo(360, 2000); // Rotate 360 degrees in 2 seconds
+        // Simulera en kort fördröjning för att visa LoadingPage (ta bort detta i din riktiga kod)
+        await System.Threading.Tasks.Task.Delay(3000); // Fördröj i 3 sekunder
 
         // När allt är klart, navigera användaren till den faktiska huvudsidan
         await Shell.Current.GoToAsync("//MainPage");

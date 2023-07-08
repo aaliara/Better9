@@ -7,10 +7,11 @@
         <Image Source="background.jpg"
                HorizontalOptions="FillAndExpand"
                    Aspect="AspectFill"/>
-        <Image Source="table.png"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   WidthRequest="600"/>
+        <Image Source="bord.png"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Fill"
+                   Aspect="AspectFill"
+               Margin="0, 0, 0, 0"/>
         <VerticalStackLayout Spacing="10">
             <Grid>
                 <ImageButton x:Name="btnBack"
